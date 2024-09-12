@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* league-spartan-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/league-spartan-v11-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* Themes */
+@layer base {
+  .theme-one {
+    --main-bg: 222, 26%, 31%;
+    --toggle-bg: 223, 31%, 20%;
+    --keypad-bg: 223, 31%, 20%;
+    --screen-bg: 224, 36%, 15%;
+
+    --key-bg: 30, 25%, 89%;
+    --key-shadow: 28, 16%, 65%;
+
+    --accent-bg: 225, 21%, 49%;
+    --accent-shadow: 224, 28%, 35%;
+
+    --inverted-bg: 6, 63%, 50%;
+    --inverted-shadow: 6, 70%, 34%;
+
+    --main: 0, 0%, 100%;
+    --keys: 221, 14%, 31%;
+    --accent: 0, 0%, 100%;
+    --inverted: 0, 0%, 100%;
+  }
+
+  .theme-two {
+    --main-bg: 0, 0%, 90%;
+    --toggle-bg: 0, 5%, 81%;
+    --keypad-bg: 0, 5%, 81%;
+    --screen-bg: 0, 0%, 93%;
+
+    --key-bg: 45, 7%, 89%;
+    --key-shadow: 35, 11%, 61%;
+
+    --accent-bg: 185, 42%, 37%;
+    --accent-shadow: 185, 58%, 25%;
+
+    --inverted-bg: 25, 98%, 40%;
+    --inverted-shadow: 25, 99%, 27%;
+
+    --main: 60, 10%, 19%;
+    --keys: 60, 10%, 19%;
+    --accent: 0, 0%, 100%;
+    --inverted: 0, 0%, 100%;
+  }
+
+  .theme-three {
+    --main-bg: 268, 75%, 9%;
+    --toggle-bg: 268, 71%, 12%;
+    --keypad-bg: 268, 71%, 12%;
+    --screen-bg: 268, 71%, 12%;
+
+    --key-bg: 268, 47%, 21%;
+    --key-shadow: 290, 70%, 36%;
+
+    --accent-bg: 281, 89%, 26%;
+    --accent-shadow: 285, 91%, 52%;
+
+    --inverted-bg: 176, 100%, 44%;
+    --inverted-shadow: 177, 92%, 70%;
+
+    --main: 52, 100%, 62%;
+    --keys: 52, 100%, 62%;
+    --accent: 0, 0%, 100%;
+    --inverted: 198, 20%, 13%;
+  }
+}
