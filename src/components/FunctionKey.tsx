@@ -22,7 +22,7 @@ function FunctionKey({
     <button
       className={`${
         spanTwo ? "col-span-2" : ""
-      } text-xl border-y-4 border-t-transparent active:border-b rounded-md flex items-center justify-center h-16 ${colors}`}
+      } text-xl md:text-3xl md:rounded-xl border-y-4 border-t-transparent active:border-b rounded-md flex items-center justify-center h-16 ${colors}`}
       onClick={handleFunction}
     >
       <p>{name}</p>

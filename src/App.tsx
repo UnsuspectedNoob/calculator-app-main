@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import Keypad from "./components/Keypad";
 import Screen from "./components/Screen";
 import { ThemeContext } from "./contexts/ThemeContext";
@@ -7,17 +7,17 @@ function App() {
   const { theme, setTheme } = useContext(ThemeContext);
   const [screen, setScreen] = useState("0");
 
-  useEffect(() => console.log("screen is " + screen), [screen]);
-
   return (
-    <div className={`bg-main-bg px-6 py-10 min-h-screen ${theme} font-league`}>
-      <div className="">
+    <div
+      className={`bg-main-bg px-6 py-10 grid min-h-screen ${theme} font-league`}
+    >
+      <div className="relative left-1/2 max-w-[640px] -translate-x-1/2 md:self-center">
         {/* Header */}
         <div className="flex justify-between items-end">
           <p className="text-[32px] text-main leading-none">calc</p>
 
-          <div className="flex items-center gap-x-7">
-            <p className="text-main text-xs uppercase leading-[0] tracking-widest -translate-y-1/2">
+          <div className="flex items-baseline gap-x-7">
+            <p className="text-main text-xs md:text-[20px] uppercase leading-[0] tracking-widest -translate-y-1/2">
               theme
             </p>
 

@@ -20,7 +20,7 @@ function DigitKey({
 
   return (
     <button
-      className={`text-[32px] border-y-4 active:border-b rounded-md flex items-center justify-center h-16 ${colors}`}
+      className={`text-[32px] md:text-[48px] border-y-4 md:p-4 active:border-b rounded-md md:rounded-[10px] flex items-center justify-center h-16 ${colors}`}
       onClick={appendDigit}
     >
       <p>{name}</p>

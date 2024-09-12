@@ -14,7 +14,7 @@ function Keypad({ screen, setScreen }: Props) {
   const [pointPresent, setPointPresent] = useState(false);
 
   return (
-    <div className="gap-3 grid grid-cols-4 grid-rows-5 bg-keypad-bg mt-6 p-6 rounded-[10px]">
+    <div className="gap-3 md:gap-6 grid grid-cols-4 grid-rows-5 bg-keypad-bg mt-6 p-6 rounded-[10px]">
       {buttons.map((button) => {
         if (button.type === "digit")
           return (

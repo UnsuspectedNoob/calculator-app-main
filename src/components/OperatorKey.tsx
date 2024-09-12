@@ -21,7 +21,7 @@ function OperatorKey({
     <button
       className={`${
         spanTwo ? "col-span-2" : ""
-      } text-3xl border-y-4 border-t-transparent active:border-b rounded-md flex items-center justify-center h-16 ${colors}`}
+      } text-3xl md:text-[40px] border-y-4 border-t-transparent active:border-b rounded-md flex items-center justify-center h-16 ${colors}`}
       onClick={handleOperation}
     >
       <p>{name}</p>
